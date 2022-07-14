@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../include/libps.sh"
+#include "../include/libps.h"
 
 void	qs_threesort(t_list **a, t_list **b)
 {

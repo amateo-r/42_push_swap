@@ -14,7 +14,7 @@
 
 /**
  * DESCRIPTION:
- * Elimina el último elemento de una lista.
+ * Eliminate last element of the list.
  * PARAMETERS:
  * @param	t_list	**stack	Lista con elementos.
  */
@@ -36,7 +36,7 @@ void	pop_back(t_list **head)
 
 /**
  * DESCRIPTION:
- * Elimina el primer elemento de una lista.
+ * Eliminate first element of the list.
  * PARAMETERS:
  * @param	t_list	**stack	Lista con elementos.
  */

@@ -13,12 +13,14 @@
 #include "../include/libps.h"
 
 /**
- *	DESCRIPTION:
- *	Aloca memoria y crea las listas para su uso.
- *	PARAMETERS:
- *	@param	int		argc	Number of input parameters.
- *	@param	char	**argv	Input paramenters.
- *	@param	t_list	*stack	List where argv data will stored.
+ * DESCRIPTION:
+ * Allocates memory and create lists.
+ * RETURN:
+ * Return the allocated stack.
+ * PARAMETERS:
+ * @param	int		argc	Number of input parameters.
+ * @param	char	**argv	Input paramenters.
+ * @param	t_list	*stack	List where argv data will stored.
  */
 t_list	*init_stack(int argc, char **argv, t_list *stack)
 {

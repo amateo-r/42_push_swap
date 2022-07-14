@@ -14,8 +14,9 @@
 
 /**
  * DESCRIPTION:
- * Devuelve la cantidad de números que son menores a 'n'
- * en 'arr'.
+ * Count numbers lesser than n.
+ * RETURN:
+ * Return the count of numbers than are lesser than n in arr.
  * PARAMETERS:
  * @param	int	*arr	Array de números donde se buscan los pequeños.
  * @param	int len		Longitud máxima donde buscar en 'arr'.
@@ -36,8 +37,9 @@ int	less_than(int *arr, int len, int n)
 
 /**
  * DESCRIPTION:
- * Devuelve la cantidad de números que son mayores a 'n'
- * en 'arr'.
+ * Count numbers bigger than n.
+ * RETURN:
+ * Return the count of numbers that are bigger than n in arr.
  * PARAMETERS:
  * @param	int	*arr	Array de números donde se buscan los mayores.
  * @param	int len		Longitud máxima donde buscar en 'arr'.
@@ -61,6 +63,10 @@ int	greater_than(int *arr, int len, int n)
  * Return the half of a longitude. If the number
  * is odd returns the half plus one if flag isnot
  * activated.
+ * RETURN:
+ * Return the half of a longitude. If the number
+ * is odd returns the half plus one if flag isnot
+ * activated.
  * PARAMETERS:
  * @param	int	len	Number to reduce into half.
  * @param	int	flag	Boolean to determinate if
@@ -81,8 +87,10 @@ int	ft_halfsize(int len, int flag)
 
 /**
  * DESCRIPTION:
- * Está función fue creada para encontra el punto medio de
- * una longitud. Si es impar redondea hacia arriba.
+ * This funcitons was created to find the half point of a
+ * index.
+ * RETURN:
+ * Return the half index of len. If is odd round up.
  * PARAMETERS:
  * @param	int	len	Longitud a buscar su punto medio.	
  */
@@ -96,8 +104,9 @@ int	find_middle(int len)
 
 /**
  * DESCRIPTION:
- * Transforma una lista t_list en un array de enteros. Aloca memoria.
- * Retorna un array de enteros. Variable int *arr.
+ * Converts a t_list list into an integer array. It allocates memory.s
+ * RETURN:
+ * Return an integer array.
  * PARAMETERS:
  * @param	t_list	**lst	Array con números.
  * @param	int		size	Número más bajo en el array.

@@ -14,9 +14,9 @@
 
 /**
  * DESCRIPTION:
- * Va partiendo la lista en mitades a partir de un número pivote.
+ * It goes spliting the list into halfs from a pivot.
  * RETURN:
- * Devuelve el índice del punto medio.
+ * Return index of half value.
  * PARAMETERS:
  * @param	int	*arr	Array con números.
  * @param	int	low		Índice más bajo en el array.
@@ -53,8 +53,10 @@ int	qs_partition(int *arr, int low, int high)
  * DESCRIPTION:
  * Encuentra el número medio de un conjunto de valores.
  * Se espera que low y high estén dentro de arr.
+ * Find the half number from a set of values. It is
+ * expected that low and high are in arr.
  * RETURN:
- * Devuelve el número medio de la lista 'arr'.
+ * Return half value of list arr.
  * PARAMETERS:
  * @param	int	*arr	Array de números.
  * @param	int	low		Índice más bajo usado para buscar el punto medio.

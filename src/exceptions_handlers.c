@@ -15,6 +15,8 @@
 /**
  * DESCRIPTION:
  * Check if input parameters are sorted.
+ * RETURN:
+ * If the input is sorted return 0 else 1.
  * PARAMETERS:
  * @param	int		argc	Number of input parameters.
  * @param	char	**argv	Input parameters.
@@ -36,6 +38,8 @@ int	chk_issorted(int argc, char **argv)
 /**
  * DESCRIPTION:
  * Check if the input parameters are integers.
+ * RETURN:
+ * If the input values aren't integers return 0 else 1.
  * PARAMATERS:
  * @param	char	**argv	Input paramters.
  */
@@ -67,6 +71,8 @@ int	chk_numbers(char **argv)
 /**
  * DESCRIPTION:
  * Check if theres is duplicated number between input parameters.
+ * RETURN:
+ * If there is at least one duplicated number return 0 else 1.
  * PARAMETERS:
  * @param	char	**argv	Input parameters.
  */
@@ -92,6 +98,8 @@ int	chk_duplicated(char **argv)
 /**
  * DESCRIPTION:
  * Manage all possible exceptions from the input paramenters.
+ * RETURN:
+ * If there aren't errors return 1 else 0.
  * PARAMETERS:
  * @param	int		argc	Number of input parameters.
  * @param	char	**argv	Input parameters.

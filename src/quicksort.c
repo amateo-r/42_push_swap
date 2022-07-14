@@ -18,6 +18,14 @@ void	qs_three(t_list **a, t_list **b);
 void	qs_repeat(t_list **a, t_list **b, int part_len);
 void	quicksort(t_list **a, t_list **b, int des);
 
+/**
+ * DESCRIPTION:
+ * No fucking idea.
+ * PARAMETERS:
+ * @param	t_list	**a			Final list.
+ * @param	t_ist	**b			Temporal list.
+ * @param	int		part_len	Length of partition to sort.
+ */
 void	sorting(t_list **a, t_list **b, int part_len)
 {
 	if (part_len == 1)
@@ -43,6 +51,7 @@ void	sorting(t_list **a, t_list **b, int part_len)
 /**
  * DESCRIPTION:
  * Mueve al principio los elementos de 'lst' 'len' veces.
+ * Move to beguining the elements of lst len times.
  * PARAMETERS:
  * @param	t_list	**lst	Lista de números a modificar.
  * @param	int		len		Cantidad de números que mover al 
@@ -62,6 +71,7 @@ void	recover(t_list **lst, int len, char *rule)
 /**
  * DESCRIPTION:
  * Ordena un conjunto de tres números durante una partición.
+ * Sorts a set of three numbers during a parition.
  * PARAMETERS:
  * @param	t_list	**a	Lista de números final.
  * @param	t_list	**b	Lista de números donde está la partición.
@@ -94,9 +104,9 @@ void	qs_three(t_list **a, t_list **b)
 
 /**
  * DESCRIPTION:
- * Proceso de quickselect inverso. Funciona igual que 'quicksort', pero
- * se hace durante la vuelta de la recursividad de 'quicksort'. Debe 
- * ejecutarse solo cuando una paratición tiene más de tres números.
+ * Inverted Quickselect process. Works like quicksort, but it does 
+ * during the back of the recursivity. It must be executed only when
+ * one partition has more than three numbers.
  * PARAMETERS:
  * @param	t_list	**a			Lista de números final.
  * @param	t_list	**b			Lista de números parcial.
@@ -126,9 +136,9 @@ void	qs_repeat(t_list **a, t_list **b, int part_len)
 
 /**
  * DESCRIPTION:
- * Algorítmo de ordenación de números. Ordena los números de una lista
- * dividiendo constántemente la lista hasta su mínima división. Dado
- * las reglas debe de hacerse a través de unas reglas y dos listas.
+ * Sorting algorithim of numbers. Sorts the numbers of one list constantly 
+ * spliting the list until its minimun division. Given the ruels it must be 
+ * do it through rules and two lists.
  * PARAMETERS:
  * @param	t_list	**a	Lista que debe estar ordenada.
  * @param	t_list	**b	Lista que se puede emplear para ordenar.

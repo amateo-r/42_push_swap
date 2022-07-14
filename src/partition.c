@@ -14,12 +14,11 @@
 
 /**
  * DESCRIPTION:
- * Es un proceso especial parecido a la función 'partition'.
- * Funciona igual que 'partition'. En este caso de hace una partición
- * de una partición. Se envían los números más grandes del pivote de
- * la partición a la lista 'a'.
+ * Special process like function 'partition'. In this case makes a 
+ * partition of a partition. Numbers bigger than the pivot of the 
+ * parition are sent to list a.
  * RETURN:
- * Cantidad de números movidos a 'a'.
+ * Return the count of numbers pushed to list a.
  * PARAMETERS:
  * @param	t_list	**a			Lista donde se mete la partición.
  * @param	t_list	**b			Lista donde se hace la partición.
@@ -53,11 +52,10 @@ int	despartition(t_list **a, t_list **b, int part_len, int *arr)
 
 /**
  * DESCRIPTION:
- * Funciona igual que la función 'partition'. Coloca todos los
- * números que no ha enviado a 'dst' y que haya movido durante su
- * búsqueda al principio de nuevo..
+ * Works like function 'parition'. Place all numbers that hadn't
+ * sent to dst and that were moved in the seek to the beguining.
  * RETURN:
- * Devuelve la longitud de la partición enviada a 'dst'.
+ * The length of the partition sent to list dst.
  * PARAMETERS:
  * @param	t_list	**src	Lista donde se hace la partición.
  * @param	t_list	**dst	Lista donde se mete la partición.
@@ -97,8 +95,10 @@ int	partition_rec(t_list **src, t_list **dst, int len)
  * DESCRIPTION:
  * Coge lista 'src' y la parte en dos. Los números más pequeños a
  * el número medio de 'src' son volcados en 'dst'.
+ * Splits list 'src' in two. Numbers lesser than half value of src
+ * are overthrow to dst.
  * RETURN:
- * Cantidad de números movidos a 'dst'.
+ * Count of numbers pushed to list dst.
  * PARAMETERS:
  * @param	t_list	**src	Lista donde se hace la partición.
  * @param	t_list	**dst	Lista donde se mete la partición.
