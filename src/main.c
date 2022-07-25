@@ -33,10 +33,11 @@ int	main(int argc, char **argv)
 		a = init_stack(argc, argv, a);
 		b = ft_lstnew(0);
 		len = ft_lstsize(a);
-		arr = ft_lsttoarr(&a, len);
+		arr = ft_lsttoarr(&a, len); // Extraño
 		quicksort(&a, &b, 0);
-		free(arr);
+		free(arr); // Extraño
 		ft_lstprint(&a);
+		issorted(&a);
 	}
 	else
 		printf("Algo mal\n");

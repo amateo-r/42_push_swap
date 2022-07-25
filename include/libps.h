@@ -67,4 +67,7 @@ int		quickselect(int *arr, int low, int high, int k);
 t_list	*init_stack(int argc, char **argv, t_list *stack);
 t_list	*init_push(t_list **src, t_list *dst);
 
+//	things to delete (trash.c)
+void	issorted(t_list **a);
+
 #endif

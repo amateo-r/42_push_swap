@@ -20,6 +20,29 @@ void	quicksort(t_list **a, t_list **b, int des);
 
 /**
  * DESCRIPTION:
+ * Print n items from list.
+ * PARAMETERS:
+ * @param	t_list	**head	List to print.
+ */
+void	ft_lstnprint(t_list **head, int len)
+{
+	int		i;
+	t_list	*tmp;
+
+	tmp = *head;
+	i = 0;
+	while ((*head) && i < len)
+	{
+		printf("[%d]: %s\n", i, (char *)(*head)->content);
+		*head = (*head)->next;
+		i++;
+	}
+	printf("===========\n");
+	*head = tmp;
+}
+
+/**
+ * DESCRIPTION:
  * No fucking idea.
  * PARAMETERS:
  * @param	t_list	**a			Final list.
@@ -104,7 +127,7 @@ void	qs_three(t_list **a, t_list **b)
 
 /**
  * DESCRIPTION:
- * Inverted Quickselect process. Works like quicksort, but it does 
+ * Inverted Quicksort process. Works like quicksort, but it does 
  * during the back of the recursivity. It must be executed only when
  * one partition has more than three numbers.
  * PARAMETERS:
@@ -119,17 +142,14 @@ void	qs_repeat(t_list **a, t_list **b, int part_len)
 	int	greaters;
 	int	*arr;
 
-	while (part_len > 3)
-	{
-		arr = ft_lsttoarr(b, part_len);
-		middle = quickselect(arr, 0, part_len - 1, find_middle(part_len));
-		greaters = greater_than(arr, part_len, middle);
-		rec = despartition(a, b, part_len, arr);
-		part_len = find_middle(part_len);
-		recover(b, rec, RRB);
-		if (part_len > 3)
-			quicksort(a, b, greaters);
-	}
+	arr = ft_lsttoarr(b, part_len);
+	middle = quickselect(arr, 0, part_len - 1, find_middle(part_len));
+	greaters = greater_than(arr, part_len, middle);
+	rec = despartition(a, b, part_len, arr);
+	part_len = find_middle(part_len);
+	recover(b, rec, RRB);
+	if (part_len >= 2)
+		quicksort(a, b, greaters);
 	sorting(a, b, part_len);
 	return ;
 }
@@ -147,11 +167,20 @@ void	qs_repeat(t_list **a, t_list **b, int part_len)
 void	quicksort(t_list **a, t_list **b, int des)
 {
 	int	part_len;
+	int	rec;
 
+	rec = 0;
 	if (!des)
 		part_len = partition(a, b, ft_lstsize(*a));
 	else
+	{
 		part_len = partition_rec(a, b, des);
+		rec = des - part_len;
+		if (des - part_len == 0)
+			rec = des;
+		if (rec > 2)
+			quicksort(a, b, rec);
+	}
 	if (ft_lstsize(*a) > 1 && !des)
 		quicksort(a, b, des);
 	sorting(a, b, part_len);

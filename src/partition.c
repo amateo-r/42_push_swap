@@ -71,12 +71,12 @@ int	partition_rec(t_list **src, t_list **dst, int len)
 
 	arr = ft_lsttoarr(src, len);
 	middle = quickselect(arr, 0, len - 1, find_middle(len));
-	count = less_than(arr, len, middle);
+	count = less_than(arr, len, middle) + 1;
 	rec = 0;
 	part_len = count;
 	while (count > 0)
 	{
-		if (ft_atoi((char *)(*src)->content) < middle)
+		if (ft_atoi((char *)(*src)->content) <= middle)
 		{
 			push(src, dst, PB);
 			count--;
@@ -93,7 +93,7 @@ int	partition_rec(t_list **src, t_list **dst, int len)
 
 /**
  * DESCRIPTION:
- * Coge lista 'src' y la parte en dos. Los números más pequeños a
+ * Coge la lista 'src' y la parte en dos. Los números más pequeños a
  * el número medio de 'src' son volcados en 'dst'.
  * Splits list 'src' in two. Numbers lesser than half value of src
  * are overthrow to dst.

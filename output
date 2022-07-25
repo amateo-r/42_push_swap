@@ -220,6 +220,11 @@ pa
 rrb
 rrb
 rrb
+pb
+pb
+sb
+pa
+pa
 rb
 rb
 pa
@@ -247,7 +252,7 @@ rrb
 rrb
 rrb
 ra
-ra
+pb
 pb
 ra
 ra
@@ -255,271 +260,13 @@ pb
 rra
 rra
 rra
+pb
+ra
+pb
 rra
 sb
 pa
 pa
-rb
-rb
-pa
-pa
-pa
-rrb
-rrb
-rb
-pa
-rrb
-pa
-pa
-pa
-rb
-pa
-pa
-rb
-rb
-rb
-pa
-rb
-rb
-rb
-pa
-rb
-pa
-pa
-rb
-rb
-rb
-pa
-pa
-pa
-rb
-pa
-pa
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-ra
-pb
-ra
-ra
-ra
-ra
-pb
-pb
-pb
-ra
-ra
-pb
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rb
-pa
-rb
-pa
-rrb
-rrb
-rb
-pa
-rrb
-pa
-pa
-rb
-rb
-rb
-rb
-pa
-pa
-pa
-pa
-rb
-pa
-rb
-pa
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-ra
-ra
-pb
-pb
-rra
-rra
-sb
-pa
-pa
-rb
-pa
-rb
-pa
-rb
-pa
-rrb
-rrb
-rrb
-ra
-pb
-rra
-pa
-rb
-rb
-pa
-pa
-rrb
-rrb
-pa
-pa
-pa
-pa
-rb
-pa
-pa
-pa
-rb
-rb
-pa
-pa
-rb
-pa
-pa
-rb
-pa
-rb
-rb
-rb
-rb
-rb
-pa
-pa
-rb
-rb
-rb
-pa
-rb
-pa
-pa
-rb
-rb
-pa
-pa
-rb
-rb
-rb
-rb
-pa
-pa
-rb
-pa
-rb
-pa
-rb
-rb
-pa
-pa
-pa
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-pb
-ra
-ra
-pb
-pb
-pb
-pb
-pb
-pb
-pb
-ra
-pb
-ra
-pb
-ra
-ra
-ra
-ra
-ra
-pb
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-rra
-pa
-rb
-rb
-rb
-pa
-rb
-rb
-pa
-rb
-pa
-pa
-rrb
-rrb
-rrb
-rrb
-rrb
-rrb
-ra
-ra
-pb
-ra
-pb
-rra
-rra
-rra
-pa
-pa
-pa
-rb
-pa
-rb
-pa
-rrb
-rrb
 rb
 rb
 pa
@@ -532,6 +279,397 @@ rb
 rb
 pa
 pa
+pa
+rrb
+rrb
+pb
+pb
+pa
+pa
+rb
+pa
+rrb
+pa
+pa
+pa
+rb
+pa
+pa
+rb
+rb
+rb
+pa
+rb
+rb
+rb
+pa
+rb
+pa
+pa
+rb
+rb
+rb
+pa
+pa
+pa
+rb
+pa
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+ra
+pb
+ra
+ra
+ra
+pb
+pb
+pb
+pb
+ra
+ra
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+ra
+pb
+ra
+ra
+pb
+pb
+rra
+rra
+rra
+ra
+pb
+pb
+rra
+sb
+pa
+pa
+pa
+pa
+pa
+rb
+pa
+rb
+pa
+pa
+rrb
+rrb
+ra
+pb
+pb
+rra
+sb
+pa
+pa
+rb
+pa
+rrb
+pa
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+pa
+pa
+rb
+pa
+rb
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+ra
+pb
+pb
+pb
+rra
+pb
+pb
+sb
+pa
+pa
+rb
+rb
+pa
+rrb
+rrb
+sb
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+pa
+rrb
+rrb
+rrb
+ra
+pb
+pb
+rra
+pa
+pa
+rb
+rb
+pa
+pa
+rrb
+rrb
+pb
+pb
+sb
+pa
+pa
+pa
+pa
+pa
+pa
+rb
+pa
+pa
+pa
+rb
+rb
+pa
+pa
+rb
+pa
+pa
+rb
+pa
+rb
+rb
+rb
+rb
+rb
+pa
+pa
+rb
+rb
+rb
+pa
+rb
+pa
+pa
+rb
+rb
+pa
+pa
+rb
+rb
+rb
+rb
+pa
+pa
+rb
+pa
+rb
+pa
+rb
+rb
+pa
+pa
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+pb
+ra
+ra
+pb
+pb
+pb
+pb
+pb
+pb
+pb
+ra
+pb
+ra
+pb
+ra
+ra
+ra
+ra
+ra
+pb
+ra
+ra
+ra
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+rra
+pb
+ra
+pb
+pb
+ra
+ra
+ra
+ra
+ra
+pb
+pb
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+pb
+ra
+pb
+ra
+pb
+rra
+rra
+pb
+ra
+pb
+rra
+pa
+pa
+rb
+rb
+pa
+rrb
+rrb
+pa
+pa
+rb
+pa
+pa
+pa
+rrb
+pb
+pb
+sb
+pa
+pa
+rb
+pa
+rrb
+pa
+pa
+pa
+pa
+rb
+rb
+rb
+pa
+rb
+rb
+pa
+rb
+pa
+pa
+rrb
+rrb
+rrb
+rrb
+rrb
+rrb
+ra
+pb
+pb
+ra
+pb
+rra
+rra
+pb
+pb
+pa
+pa
+rb
+rb
+pa
+rrb
+rrb
+pa
+pa
+pa
+rb
+pa
+rb
+pa
+rrb
+rrb
+pb
+ra
+pb
+rra
+sb
+pa
+pa
+rb
+rb
+pa
+rrb
+rrb
+sb
+pa
+pa
+rb
+rb
+pa
+pa
 rb
 pa
 pa
@@ -575,20 +713,50 @@ pb
 ra
 pb
 ra
+pb
+pb
+pb
+rra
+rra
+rra
+rra
+rra
+rra
+ra
+pb
+ra
 ra
 pb
 pb
 rra
 rra
 rra
+pb
+ra
+pb
 rra
-rra
-rra
-rra
+sb
+pa
+pa
+rb
+rb
+pa
+rrb
+rrb
+sb
+pa
+pa
 rb
 pa
 pa
+pa
 rrb
+pb
+ra
+pb
+rra
+pa
+pa
 rb
 rb
 pa
@@ -619,7 +787,18 @@ rrb
 pb
 ra
 pb
+ra
+pb
 rra
+rra
+pb
+ra
+pb
+rra
+sb
+pa
+pa
+pa
 sb
 pa
 pa
@@ -635,11 +814,18 @@ rrb
 rrb
 rrb
 pb
+pb
+pa
 pa
 rb
 pa
 pa
 rrb
+pb
+pb
+sb
+pa
+pa
 sb
 pa
 pa
@@ -648,78 +834,78 @@ Imprimiendo lista...
 ===========
 [0]: 2
 [1]: 4
-[2]: 20
-[3]: 12
+[2]: 12
+[3]: 20
 [4]: 21
 [5]: 26
 [6]: 29
 [7]: 30
 [8]: 32
-[9]: 52
-[10]: 63
-[11]: 43
-[12]: 50
+[9]: 43
+[10]: 50
+[11]: 52
+[12]: 63
 [13]: 66
 [14]: 68
 [15]: 75
 [16]: 77
 [17]: 88
-[18]: 106
-[19]: 102
-[20]: 112
-[21]: 104
-[22]: 96
-[23]: 95
-[24]: 90
+[18]: 90
+[19]: 95
+[20]: 96
+[21]: 102
+[22]: 104
+[23]: 106
+[24]: 112
 [25]: 118
 [26]: 121
 [27]: 132
-[28]: 136
-[29]: 137
-[30]: 133
+[28]: 133
+[29]: 136
+[30]: 137
 [31]: 144
 [32]: 145
-[33]: 160
-[34]: 156
+[33]: 156
+[34]: 160
 [35]: 163
-[36]: 170
-[37]: 213
-[38]: 182
-[39]: 198
-[40]: 221
-[41]: 209
-[42]: 236
-[43]: 210
-[44]: 235
-[45]: 186
-[46]: 199
-[47]: 172
-[48]: 165
+[36]: 165
+[37]: 170
+[38]: 172
+[39]: 182
+[40]: 186
+[41]: 198
+[42]: 199
+[43]: 209
+[44]: 210
+[45]: 213
+[46]: 221
+[47]: 235
+[48]: 236
 [49]: 243
 [50]: 246
-[51]: 253
-[52]: 252
+[51]: 252
+[52]: 253
 [53]: 260
-[54]: 265
-[55]: 261
+[54]: 261
+[55]: 265
 [56]: 268
 [57]: 279
-[58]: 295
-[59]: 282
-[60]: 291
+[58]: 282
+[59]: 291
+[60]: 295
 [61]: 306
 [62]: 312
 [63]: 315
 [64]: 318
-[65]: 324
-[66]: 319
-[67]: 360
+[65]: 319
+[66]: 324
+[67]: 325
 [68]: 329
-[69]: 355
-[70]: 344
-[71]: 325
-[72]: 330
-[73]: 337
+[69]: 330
+[70]: 337
+[71]: 344
+[72]: 355
+[73]: 360
 [74]: 366
 [75]: 372
 [76]: 381
@@ -728,15 +914,15 @@ Imprimiendo lista...
 [79]: 387
 [80]: 394
 [81]: 405
-[82]: 420
-[83]: 408
-[84]: 428
-[85]: 411
+[82]: 408
+[83]: 411
+[84]: 420
+[85]: 428
 [86]: 429
 [87]: 431
 [88]: 434
-[89]: 436
-[90]: 435
+[89]: 435
+[90]: 436
 [91]: 439
 [92]: 443
 [93]: 454
@@ -746,3 +932,6 @@ Imprimiendo lista...
 [97]: 474
 [98]: 480
 [99]: 483
+
+
+Ordenao to wapo, campeón.

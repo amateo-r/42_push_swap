@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   threesort.c                                        :+:      :+:    :+:   */
+/*   trash.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amateo-r <amateo-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,25 @@
 
 #include "../include/libps.h"
 
-void	qs_threesort(t_list **a, t_list **b)
+void	issorted(t_list **head)
 {
+	int		len;
+	int		flag;
+	t_list	*tmp;
+
+	len = ft_lstsize(*head);
+	flag = 0;
+	tmp = *head;
+	while (--len && !flag)
+	{
+		if (ft_atoi((*head)->content) > ft_atoi((*head)->next->content))
+			flag = 0;
+		*head = (*head)->next;
+	}
+	*head = tmp;
+	if (flag)
+		printf("\n\nDesorden encontrado tonto.\n");
+	else
+		printf("\n\nOrdenao to wapo, campeón.\n");
 	return ;
 }
