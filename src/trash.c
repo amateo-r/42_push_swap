@@ -28,9 +28,9 @@ void	issorted(t_list **head)
 		*head = (*head)->next;
 	}
 	*head = tmp;
-	if (flag)
-		printf("\n\nDesorden encontrado tonto.\n");
-	else
-		printf("\n\nOrdenao to wapo, campeón.\n");
+	// if (flag)
+	// 	printf("\n\nDesorden encontrado tonto.\n");
+	// else
+	// 	printf("\n\nOrdenao to wapo, campeón.\n");
 	return ;
 }

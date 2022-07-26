@@ -49,6 +49,9 @@ int		partition(t_list **src, t_list **dst, int len);
 void	recover(t_list **lst, int len, char *rule);
 void	quicksort(t_list **a, t_list **b, int des);
 
+//	shortsort.c
+void	sortthree(t_list **a);
+
 //	pop.c
 void	pop_front(t_list **stack);
 void	pop_back(t_list **stack);

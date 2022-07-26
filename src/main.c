@@ -13,18 +13,12 @@
 #include "../include/libps.h"
 #include <stdio.h>
 
-// Camino a la congelación
-/*
-	ft_mergesort_b(&a, &b, len);
-	a = ft_lstnew(0);
-	ft_finalmerge(&a, &b, ft_lstsize(b));
-*/
 int	main(int argc, char **argv)
 {
 	t_list	*a;
 	t_list	*b;
 	int		len;
-	int		*arr;
+	// int		*arr;
 
 	a = NULL;
 	b = NULL;
@@ -33,10 +27,11 @@ int	main(int argc, char **argv)
 		a = init_stack(argc, argv, a);
 		b = ft_lstnew(0);
 		len = ft_lstsize(a);
-		arr = ft_lsttoarr(&a, len); // Extraño
-		quicksort(&a, &b, 0);
-		free(arr); // Extraño
-		ft_lstprint(&a);
+		if (len <= 3)
+			sortthree(&a);
+		else
+			quicksort(&a, &b, 0);
+		// ft_lstprint(&a);
 		issorted(&a);
 	}
 	else

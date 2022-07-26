@@ -18,14 +18,41 @@
  * stack a.
  * PARAMETERS:
  * @param	t_list	**a	Final sorted stack.
- * @param	t_list	**b	Stack to extra operations.
  */
-void	sortthree(t_list **a, t_list **b)
+void	sortthree(t_list **a)
 {
-	3 2 1
-	3 1 2
-	1 3 2
-	2 1 3
-	2 3 1
+	if (ft_atoi((*a)->content) > ft_atoi(ft_lstlast(*a)->content))
+	{
+		if (ft_atoi((*a)->content) < ft_atoi((*a)->next->content))
+			reverse(a, RRA);
+		else
+		{
+			rotate(a, RA);
+			swap(a, SA);
+		}
+	}
+	if (ft_atoi((*a)->content) > ft_atoi((*a)->next->content))
+		swap(a, SA);
+	if (ft_atoi((*a)->next->content) > ft_atoi(ft_lstlast(*a)->content))
+	{
+		swap(a, SA);
+		rotate(a, RA);
+	}
 	return ;
 }
+
+/**
+ * DESCRIPTION:
+ * Sorts an input list of five numbers into 
+ * stack a.
+ * PARAMETERS:
+ * @param	t_list	**a	Final sorted stack.
+ * @param	t_list	**b	Stack to extra operations.
+ */
+ void	sortfive(t_list **a, t_list **b)
+ {
+	 1 2 3 4 5 ¿Bubble?
+
+	 3 5 4 2 1
+	 return ;
+ }
