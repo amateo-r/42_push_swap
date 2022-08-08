@@ -1,14 +1,52 @@
 pb
+pb
+rra
+pa
+rra
+rra
+pa
 ra
 ra
 ra
+===========
+Imprimiendo lista...
+===========
+[0]: 2
+[1]: 16
+[2]: 18
+[3]: 28
+[4]: 33
+pb
 pb
 ra
+sa
+rra
+pa
+pa
 ra
+ra
+ra
+===========
+Imprimiendo lista...
+===========
+[0]: 3
+[1]: 17
+[2]: 19
+[3]: 20
+[4]: 23
 pb
 pb
+sa
 pa
+rra
 pa
-sb
-pa
-pa
+ra
+ra
+===========
+Imprimiendo lista...
+===========
+[0]: -969
+[1]: -824
+[2]: -744
+[3]: -359
+[4]: -218

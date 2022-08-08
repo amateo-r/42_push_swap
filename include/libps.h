@@ -33,12 +33,11 @@ int		greater_than(int *arr, int len, int n);
 int		ft_halfsize(int len, int flag);
 int		find_middle(int len);
 int		*ft_lsttoarr(t_list **lst, int size);
-void	ft_lstprint(t_list **head);
 
 //	exceptions_handlers.c
-int		chk_numbers(char **argv);
-int		chk_duplicated(char **argv);
-int		input_manager(int argc, char **argv);
+// int		chk_numbers(char **argv);
+// int		chk_duplicated(char **argv);
+int		input_manager(int argc, char **argv, int k);
 
 //	partition.c
 int		despartition(t_list **a, t_list **b, int part_len, int *arr);
@@ -51,6 +50,7 @@ void	quicksort(t_list **a, t_list **b, int des);
 
 //	shortsort.c
 void	sortthree(t_list **a);
+void	sortfive(t_list **a, t_list **b);
 
 //	pop.c
 void	pop_front(t_list **stack);
@@ -70,7 +70,8 @@ int		quickselect(int *arr, int low, int high, int k);
 t_list	*init_stack(int argc, char **argv, t_list *stack);
 t_list	*init_push(t_list **src, t_list *dst);
 
-//	things to delete (trash.c)
+//	things not relevant (trash.c)
 void	issorted(t_list **a);
+void	ft_lstprint(t_list **head);
 
 #endif

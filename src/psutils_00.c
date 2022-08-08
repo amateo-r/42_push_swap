@@ -127,28 +127,3 @@ int	*ft_lsttoarr(t_list **lst, int size)
 	}
 	return (arr);
 }
-
-/**
- * DESCRIPTION:
- * Print list.
- * PARAMETERS:
- * @param	t_list	**head	List to print.
- */
-void	ft_lstprint(t_list **head)
-{
-	int		i;
-	t_list	*tmp;
-
-	tmp = *head;
-	ft_putstr_fd("===========\n", 1);
-	ft_putstr_fd("Imprimiendo lista...\n", 1);
-	i = 0;
-	while ((*head))
-	{
-		printf("[%d]: %s\n", i, (char *)(*head)->content);
-		*head = (*head)->next;
-		i++;
-	}
-	ft_putstr_fd("===========\n", 1);
-	*head = tmp;
-}

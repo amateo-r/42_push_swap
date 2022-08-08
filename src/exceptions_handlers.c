@@ -32,6 +32,7 @@ int	chk_issorted(int argc, char **argv)
 		i++;
 	if (i == (argc - 2) && ft_atoi(argv[i]) < ft_atoi(argv[i + 1]))
 		flag = 0;
+	printf("Sorted %d\n", flag);
 	return (flag);
 }
 
@@ -42,16 +43,20 @@ int	chk_issorted(int argc, char **argv)
  * If the input values aren't integers return 0 else 1.
  * PARAMATERS:
  * @param	char	**argv	Input paramters.
+ * @param	int		k		Special case where all is a string instead
+ * 							of individual inputs.
  */
-int	chk_numbers(char **argv)
+int	chk_numbers(char **argv, int k)
 {
 	int	flag;
 	int	i;
 
 	flag = 1;
-	i = 0;
+	i = 0 - k;
+	printf("I: %d\n", i);
 	while (argv[++i] && flag)
 	{
+		printf("argv[%d]: %s\n", i, argv[i]);
 		if (ft_strlen(argv[i]) == 11 && ft_strncmp(argv[i], \
 			"-2147483648", 11) > 0)
 			flag = 0;
@@ -65,6 +70,7 @@ int	chk_numbers(char **argv)
 		else if (ft_atoi(argv[i]) == 0 && ft_strncmp(argv[i], "0", 1) != 0)
 			flag = 0;
 	}
+	printf("Numbers %d\n", flag);
 	return (flag);
 }
 
@@ -75,14 +81,16 @@ int	chk_numbers(char **argv)
  * If there is at least one duplicated number return 0 else 1.
  * PARAMETERS:
  * @param	char	**argv	Input parameters.
+ * @param	int		k		Special case where all is a string instead
+ * 							of individual inputs.
  */
-int	chk_duplicated(char **argv)
+int	chk_duplicated(char **argv, int k)
 {
 	int	i;
 	int	j;
 	int	flag;
 
-	i = 0;
+	i = 0 - k;
 	j = 0;
 	flag = 1;
 	while (argv[++i] && flag)
@@ -92,9 +100,26 @@ int	chk_duplicated(char **argv)
 			if (ft_atoi(argv[j]) == ft_atoi(argv[i]))
 				flag = 0;
 	}
+	printf("Duplicated %d\n", flag);
 	return (flag);
 }
 
+/**
+ * DESCRIPTION:
+ * Free memory allocated from matrix.
+ * PARMETERES:
+ * @param	char	**matrix	Input numbers.
+ */
+void	free_matrix(char **matrix)
+{
+	int	i;
+
+	i = -1;
+	while(matrix[++i] != 0)
+		free(matrix[i]);
+	free(matrix);
+	return ;
+}
 /**
  * DESCRIPTION:
  * Manage all possible exceptions from the input paramenters.
@@ -103,16 +128,31 @@ int	chk_duplicated(char **argv)
  * PARAMETERS:
  * @param	int		argc	Number of input parameters.
  * @param	char	**argv	Input parameters.
+ * @param	int		k		Special case where all is a string instead
+ * 							of individual inputs.
  */
-int	input_manager(int argc, char **argv)
+int	input_manager(int argc, char **argv, int k)
 {
+	char	**matrix;
+	int		exc;
+
 	if (argc <= 1)
 		return (0);
-	else if (!chk_numbers(argv))
-		return (0);
-	else if (!chk_duplicated(argv))
-		return (0);
-	else if (!chk_issorted(argc, argv))
-		return (0);
+	else if (argc == 2 && !k)
+	{
+		matrix = ft_split(argv[1], ' ');
+		exc = input_manager(argc, matrix, 1);
+		free_matrix(matrix);
+		return (exc);
+	}
+	else
+	{
+		if (!chk_numbers(argv, k))
+			return (0);
+		else if (!chk_duplicated(argv, k))
+			return (0);
+		else if (!chk_issorted(argc, argv))
+			return (0);
+	}
 	return (1);
 }
