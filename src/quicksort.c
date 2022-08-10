@@ -59,6 +59,8 @@ void	sorting(t_list **a, t_list **b, int part_len)
 	}
 	else if (part_len == 2)
 	{
+		if (ft_atoi((*a)->content) > ft_atoi((*a)->next->content))
+			swap(a, SA);
 		if (ft_atoi((*b)->content) < ft_atoi((*b)->next->content))
 			swap(b, SB);
 		push(b, a, PA);

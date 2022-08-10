@@ -12,6 +12,19 @@
 
 #include "../include/libps.h"
 
+t_list	*add_elements(char **matrix, t_list *stack)
+{
+	int	i;
+	t_list	*one;
+
+	one = ft_lstnew(matrix[0]);
+	ft_lstadd_back(&stack, one);
+	i = 0;
+	while (matrix[++i] != 0)
+		ft_lstadd_back(&stack, ft_lstnew(matrix[i]));
+	return (stack);
+}
+
 /**
  * DESCRIPTION:
  * Allocates memory and create lists.
@@ -24,14 +37,14 @@
  */
 t_list	*init_stack(int argc, char **argv, t_list *stack)
 {
-	int		i;
-	t_list	*one;
+	char	**matrix;
 
-	i = 1;
-	one = ft_lstnew(argv[i]);
-	ft_lstadd_back(&stack, one);
-	i = 1;
-	while (++i < argc)
-		ft_lstadd_back(&stack, ft_lstnew(argv[i]));
+	if (argc == 2)
+	{
+		matrix = ft_split(argv[1], ' ');
+		stack = add_elements(matrix, stack);
+	}
+	else
+		stack = add_elements(&argv[1], stack);
 	return (stack);
 }

@@ -21,18 +21,21 @@
  * @param	int		argc	Number of input parameters.
  * @param	char	**argv	Input parameters.
  */
-int	chk_issorted(int argc, char **argv)
+int	chk_issorted(char **argv, int k)
 {
 	int	flag;
 	int	i;
 
-	flag = 1;
-	i = 1;
-	while (ft_atoi(argv[i]) < ft_atoi(argv[i + 1]) && i < (argc - 2))
+	flag = 0;
+	i = 1 - k;
+	while(!flag && argv[i + 1] != 0)
+	{
+		if (ft_atoi(argv[i]) > ft_atoi(argv[i + 1]))
+			flag = 1;
 		i++;
-	if (i == (argc - 2) && ft_atoi(argv[i]) < ft_atoi(argv[i + 1]))
-		flag = 0;
-	printf("Sorted %d\n", flag);
+	}
+	
+	// printf("Sorted %d\n", flag);
 	return (flag);
 }
 
@@ -53,10 +56,8 @@ int	chk_numbers(char **argv, int k)
 
 	flag = 1;
 	i = 0 - k;
-	printf("I: %d\n", i);
 	while (argv[++i] && flag)
 	{
-		printf("argv[%d]: %s\n", i, argv[i]);
 		if (ft_strlen(argv[i]) == 11 && ft_strncmp(argv[i], \
 			"-2147483648", 11) > 0)
 			flag = 0;
@@ -70,7 +71,7 @@ int	chk_numbers(char **argv, int k)
 		else if (ft_atoi(argv[i]) == 0 && ft_strncmp(argv[i], "0", 1) != 0)
 			flag = 0;
 	}
-	printf("Numbers %d\n", flag);
+	// printf("Numbers %d\n", flag);
 	return (flag);
 }
 
@@ -100,7 +101,7 @@ int	chk_duplicated(char **argv, int k)
 			if (ft_atoi(argv[j]) == ft_atoi(argv[i]))
 				flag = 0;
 	}
-	printf("Duplicated %d\n", flag);
+	// printf("Duplicated %d\n", flag);
 	return (flag);
 }
 
@@ -151,7 +152,7 @@ int	input_manager(int argc, char **argv, int k)
 			return (0);
 		else if (!chk_duplicated(argv, k))
 			return (0);
-		else if (!chk_issorted(argc, argv))
+		else if (!chk_issorted(argv, k))
 			return (0);
 	}
 	return (1);

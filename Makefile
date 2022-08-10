@@ -27,7 +27,7 @@ SRC			=	./src/main.c \
 				./src/quicksort.c \
 				./src/partition.c \
 				./src/trash.c \
-				./src/shortsort.c
+				./src/smallsort.c
 OBJ			=	$(SRC:.c=.o)
 
 #	LIBS

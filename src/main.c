@@ -24,20 +24,19 @@ int	main(int argc, char **argv)
 	len = 0;
 	if (input_manager(argc, argv, 0) != 0)
 	{
-		printf("buenos días\n");
-		// a = init_stack(argc, argv, a);
-		// b = ft_lstnew(0);
-		// len = ft_lstsize(a);
-		// if (len <= 3)
-		// 	sortthree(&a);
-		// else if (len <= 5)
-		// 	sortfive(&a, &b);
-		// else
-		// 	quicksort(&a, &b, 0);
+		a = init_stack(argc, argv, a);
+		b = ft_lstnew(0);
+		len = ft_lstsize(a);
+		if (len <= 3)
+			sortthree(&a);
+		else if (len <= 5)
+			sortfive(&a, &b);
+		else
+			quicksort(&a, &b, 0);
 		// ft_lstprint(&a);
 		// issorted(&a);
 	}
 	else
-		printf("Algo mal\n");
+		printf("Input incorrecto\n");
 	return (0);
 }

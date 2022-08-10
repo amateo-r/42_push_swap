@@ -21,6 +21,7 @@
 * @param	t_list	**stack	Lista con los números.
 * @param	char	*rule	Nombre de la regla a imprimir.
 */
+
 void	reverse(t_list **stack, char *rule)
 {
 	t_list	*new_first;
@@ -40,6 +41,7 @@ void	reverse(t_list **stack, char *rule)
  * @param	t_list	**a	Stack 'a'.
  * @param	t_list	**b	Stack 'b'.
  */
+
 void	reverse_all(t_list **a, t_list **b)
 {
 	reverse(a, "");

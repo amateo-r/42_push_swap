@@ -49,7 +49,7 @@ void	issorted(t_list **head)
 	while (--len && !flag)
 	{
 		if (ft_atoi((*head)->content) > ft_atoi((*head)->next->content))
-			flag = 0;
+			flag = 1;
 		*head = (*head)->next;
 	}
 	*head = tmp;
