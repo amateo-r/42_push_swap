@@ -96,8 +96,10 @@ int	chk_duplicated(char **argv, int k)
 	{
 		j = i;
 		while (argv[++j] && flag)
+		{
 			if (ft_atoi(argv[j]) == ft_atoi(argv[i]))
 				flag = 0;
+		}
 	}
 	return (flag);
 }
