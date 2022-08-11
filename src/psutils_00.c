@@ -73,6 +73,7 @@ int	greater_than(int *arr, int len, int n)
  * 						the return is plus one or
  * 						not.
  */
+
 int	ft_halfsize(int len, int flag)
 {
 	int	half;
@@ -94,6 +95,7 @@ int	ft_halfsize(int len, int flag)
  * PARAMETERS:
  * @param	int	len	Longitud a buscar su punto medio.	
  */
+
 int	find_middle(int len)
 {
 	if (len % 2 != 0)
@@ -111,6 +113,7 @@ int	find_middle(int len)
  * @param	t_list	**lst	Array con números.
  * @param	int		size	Número más bajo en el array.
  */
+
 int	*ft_lsttoarr(t_list **lst, int size)
 {
 	int		*arr;

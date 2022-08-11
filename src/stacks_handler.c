@@ -14,7 +14,7 @@
 
 t_list	*add_elements(char **matrix, t_list *stack)
 {
-	int	i;
+	int		i;
 	t_list	*one;
 
 	one = ft_lstnew(matrix[0]);

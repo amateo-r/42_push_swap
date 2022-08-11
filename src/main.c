@@ -33,10 +33,6 @@ int	main(int argc, char **argv)
 			sortfive(&a, &b);
 		else
 			quicksort(&a, &b, 0);
-		// ft_lstprint(&a);
-		// issorted(&a);
 	}
-	else
-		printf("Input incorrecto\n");
 	return (0);
 }

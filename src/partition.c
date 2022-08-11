@@ -50,6 +50,27 @@ int	despartition(t_list **a, t_list **b, int part_len, int *arr)
 	return (recover);
 }
 
+int	partition_rec_dlc(t_list **src, t_list **dst, int middle, int count)
+{
+	int	rec;
+
+	rec = 0;
+	while (count > 0)
+	{
+		if (ft_atoi((char *)(*src)->content) <= middle)
+		{
+			push(src, dst, PB);
+			count--;
+		}
+		else
+		{
+			rotate(src, RA);
+			rec++;
+		}
+	}
+	return (rec);
+}
+
 /**
  * DESCRIPTION:
  * Works like function 'parition'. Place all numbers that hadn't
@@ -72,21 +93,8 @@ int	partition_rec(t_list **src, t_list **dst, int len)
 	arr = ft_lsttoarr(src, len);
 	middle = quickselect(arr, 0, len - 1, find_middle(len));
 	count = less_than(arr, len, middle) + 1;
-	rec = 0;
 	part_len = count;
-	while (count > 0)
-	{
-		if (ft_atoi((char *)(*src)->content) <= middle)
-		{
-			push(src, dst, PB);
-			count--;
-		}
-		else
-		{
-			rotate(src, RA);
-			rec++;
-		}
-	}
+	rec = partition_rec_dlc(src, dst, middle, count);
 	recover(src, rec, RRA);
 	return (part_len);
 }

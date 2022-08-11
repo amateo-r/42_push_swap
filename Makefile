@@ -10,9 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-# https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/
-# https://www.programiz.com/dsa/linked-list
-
 #	SOURCES
 SRC			=	./src/main.c \
 				./src/exceptions_handlers.c \

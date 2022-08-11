@@ -14,6 +14,29 @@
 
 /**
  * DESCRIPTION:
+ * Print n items from list.
+ * PARAMETERS:
+ * @param	t_list	**head	List to print.
+ */
+void	ft_lstnprint(t_list **head, int len)
+{
+	int		i;
+	t_list	*tmp;
+
+	tmp = *head;
+	i = 0;
+	while ((*head) && i < len)
+	{
+		printf("[%d]: %s\n", i, (char *)(*head)->content);
+		*head = (*head)->next;
+		i++;
+	}
+	printf("===========\n");
+	*head = tmp;
+}
+
+/**
+ * DESCRIPTION:
  * Print list.
  * PARAMETERS:
  * @param	t_list	**head	List to print.

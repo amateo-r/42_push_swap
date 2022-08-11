@@ -21,6 +21,7 @@
  * @param	int		argc	Number of input parameters.
  * @param	char	**argv	Input parameters.
  */
+
 int	chk_issorted(char **argv, int k)
 {
 	int	flag;
@@ -28,14 +29,12 @@ int	chk_issorted(char **argv, int k)
 
 	flag = 0;
 	i = 1 - k;
-	while(!flag && argv[i + 1] != 0)
+	while (!flag && argv[i + 1] != 0)
 	{
 		if (ft_atoi(argv[i]) > ft_atoi(argv[i + 1]))
 			flag = 1;
 		i++;
 	}
-	
-	// printf("Sorted %d\n", flag);
 	return (flag);
 }
 
@@ -71,7 +70,6 @@ int	chk_numbers(char **argv, int k)
 		else if (ft_atoi(argv[i]) == 0 && ft_strncmp(argv[i], "0", 1) != 0)
 			flag = 0;
 	}
-	// printf("Numbers %d\n", flag);
 	return (flag);
 }
 
@@ -101,7 +99,6 @@ int	chk_duplicated(char **argv, int k)
 			if (ft_atoi(argv[j]) == ft_atoi(argv[i]))
 				flag = 0;
 	}
-	// printf("Duplicated %d\n", flag);
 	return (flag);
 }
 
@@ -116,7 +113,7 @@ void	free_matrix(char **matrix)
 	int	i;
 
 	i = -1;
-	while(matrix[++i] != 0)
+	while (matrix[++i] != 0)
 		free(matrix[i]);
 	free(matrix);
 	return ;

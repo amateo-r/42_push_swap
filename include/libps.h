@@ -73,5 +73,6 @@ t_list	*init_push(t_list **src, t_list *dst);
 //	things not relevant (trash.c)
 void	issorted(t_list **a);
 void	ft_lstprint(t_list **head);
+void	ft_lstnprint(t_list **head, int len);
 
 #endif
