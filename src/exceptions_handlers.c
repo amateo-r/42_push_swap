@@ -120,6 +120,7 @@ void	free_matrix(char **matrix)
 	free(matrix);
 	return ;
 }
+
 /**
  * DESCRIPTION:
  * Manage all possible exceptions from the input paramenters.
