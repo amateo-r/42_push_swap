@@ -47,6 +47,6 @@ void	swap_all(t_list **a, t_list **b)
 {
 	swap(a, "");
 	swap(b, "");
-	ft_putendl_fd("SS", 1);
+	ft_putendl_fd("ss", 1);
 	return ;
 }

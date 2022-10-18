@@ -51,7 +51,6 @@ char	**ft_split(char const *s, char c)
 {
 	char	**table;
 	int		len;
-	int		count;
 	int		i;
 
 	if (s == 0)
@@ -63,7 +62,6 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	while (len--)
 	{
-		count = 0;
 		while (*s == c && *s != '\0')
 			s++;
 		table[i] = ft_substr ((const char *)s, 0, ft_cl((const char *)s, c));

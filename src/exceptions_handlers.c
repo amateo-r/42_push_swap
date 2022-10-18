@@ -153,7 +153,7 @@ int	input_manager(int argc, char **argv, int k)
 		else if (!chk_duplicated(argv, k))
 			return (0);
 		else if (!chk_issorted(argv, k))
-			return (0);
+			return (2);
 	}
 	return (1);
 }

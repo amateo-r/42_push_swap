@@ -18,11 +18,13 @@ int	main(int argc, char **argv)
 	t_list	*a;
 	t_list	*b;
 	int		len;
+	int		flag;
 
 	a = NULL;
 	b = NULL;
 	len = 0;
-	if (input_manager(argc, argv, 0) != 0)
+	flag = input_manager(argc, argv, 0);
+	if (flag == 1)
 	{
 		a = init_stack(argc, argv, a);
 		b = ft_lstnew(0);
@@ -34,5 +36,7 @@ int	main(int argc, char **argv)
 		else
 			quicksort(&a, &b, 0);
 	}
+	else if (flag == 0)
+		ft_putendl_fd("Error", 1);
 	return (0);
 }
